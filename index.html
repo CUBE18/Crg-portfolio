@@ -4,140 +4,176 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Charan N | Data Engineer</title>
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #0f0f10;
-      color: #f0f0f0;
-      line-height: 1.6;
-    }
-    header {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 60px 20px 40px;
-      background: radial-gradient(circle, #1c1c1e 0%, #0f0f10 100%);
-    }
-    header img {
-      width: 140px;
-      height: 140px;
-      border-radius: 50%;
-      margin-bottom: 20px;
-      object-fit: cover;
-      border: 3px solid #2d2d2f;
-    }
-    header h1 {
-      font-size: 2.5rem;
-      color: #ffffff;
-    }
-    header p {
-      font-size: 1.2rem;
-      color: #60a5fa;
-      margin-top: 10px;
-    }
-    .section {
-      max-width: 960px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-    .section h2 {
-      color: #ffffff;
-      border-bottom: 2px solid #60a5fa;
-      padding-bottom: 6px;
-      margin-bottom: 20px;
-    }
-    ul {
-      list-style-type: square;
-      padding-left: 20px;
-    }
-    .skills span {
-      background-color: #1f2937;
-      padding: 8px 14px;
-      margin: 5px;
-      display: inline-block;
-      border-radius: 20px;
-      font-size: 0.9rem;
-      color: #ffffff;
-    }
-    footer {
-      text-align: center;
-      margin-top: 60px;
-      padding: 20px;
-      background-color: #1c1c1e;
-      color: #888;
-      font-size: 0.9rem;
-    }
-    a {
-      color: #60a5fa;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #0d1117;
+  color: #c9d1d9;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+header {
+  background: linear-gradient(135deg, #1f2937, #111827);
+  text-align: center;
+  padding: 60px 20px 40px;
+}
+
+header img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 4px solid #2563eb;
+  box-shadow: 0 0 15px rgba(37, 99, 235, 0.5);
+}
+
+header h1 {
+  font-size: 2.8rem;
+  color: #ffffff;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #60a5fa;
+  margin-top: 8px;
+}
+
+nav {
+  margin-top: 20px;
+}
+
+nav a {
+  margin: 0 15px;
+  color: #60a5fa;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+section {
+  margin-bottom: 60px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+section h2 {
+  font-size: 1.8rem;
+  border-bottom: 2px solid #2563eb;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.skills span {
+  display: inline-block;
+  background-color: #1f2937;
+  border: 1px solid #2563eb;
+  color: #c9d1d9;
+  padding: 8px 16px;
+  margin: 5px;
+  border-radius: 30px;
+  font-size: 0.95rem;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #111827;
+  color: #6b7280;
+}
+
+a {
+  color: #60a5fa;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
   </style>
 </head>
 <body>
   <header>
-    <img src="https://lh3.googleusercontent.com/pw/AP1GczPVR7cFhUL1BQYPcfwzkZoGOPyoP8zNjr4_EZkT1oEvHPFjF1FlONhUv5LwWICW-C_UfhXXrLw3YwNquFRUpZngJIBFTIvDiRLpKxtKTCeTqBB1pOay=w2400" alt="Charan Photo">
+    <img src="https://avatars.githubusercontent.com/u/9919?s=200&v=4" alt="Charan Avatar">
     <h1>Charan N</h1>
     <p>Data Engineer | Azure | Cloud Pipelines | Distributed Systems</p>
-    <p><a href="mailto:ncharan018@gmail.com">ncharan018@gmail.com</a> | <a href="https://linkedin.com/in/crg018" target="_blank">LinkedIn</a> | Bangalore, India</p>
-  </header>  <section class="section" id="about">
-    <h2>About Me</h2>
-    <p>Results-driven Data Engineer with 4+ years of experience designing scalable data pipelines, automating ETL processes, and implementing cloud-based solutions. Proficient in Python, SQL, PySpark, and distributed systems with strong hands-on experience in Azure.</p>
-  </section>  <section class="section" id="skills">
-    <h2>Skills</h2>
-    <div class="skills">
-      <span>Python</span>
-      <span>SQL</span>
-      <span>PySpark</span>
-      <span>Scala</span>
-      <span>Spark</span>
-      <span>Hive</span>
-      <span>Airflow</span>
-      <span>Kafka</span>
-      <span>Azure</span>
-      <span>AWS</span>
-      <span>CI/CD</span>
-      <span>Git</span>
-    </div>
-  </section>  <section class="section" id="experience">
-    <h2>Experience</h2>
-    <h3>Tiger Analytics – Data Engineer (Jan 2021 - Mar 2025)</h3>
-    <ul>
-      <li>Built ETL pipelines in ADF & Databricks (2TB/day)</li>
-      <li>Migrated workloads to Synapse, improving performance by 30%</li>
-      <li>Enabled governance automation using AWS Glue and Delta validation</li>
-      <li>Reduced CI/CD errors by 40%</li>
-    </ul>
-    <h3>Freelance/Startup – Data Consultant (Mar 2020 - Dec 2020)</h3>
-    <ul>
-      <li>Architected Snowflake-based solutions</li>
-      <li>Built Kafka/Spark streaming alert systems</li>
-    </ul>
-    <h3>InMovidu – Digital Marketing Intern (Jan 2020 - Mar 2020)</h3>
-    <ul>
-      <li>Created Google Analytics dashboards</li>
-      <li>Ran A/B tests improving engagement by 15%</li>
-    </ul>
-  </section>  <section class="section" id="projects">
-    <h2>Projects</h2>
-    <ul>
-      <li><strong>PnL Attribution Engine:</strong> Built ETL for capital data; improved delivery by 35%</li>
-      <li><strong>Lineage Tracker:</strong> Added audit logs for schema changes</li>
-      <li><strong>Forecast Platform:</strong> Enabled PySpark predictive pipelines</li>
-    </ul>
-  </section>  <section class="section" id="education">
-    <h2>Education</h2>
-    <ul>
-      <li>MBA, Manipal University, Bangalore – 8.2 CGPA</li>
-      <li>BE, PES University, Bangalore – 7.0 CGPA</li>
-    </ul>
-  </section>  <footer>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+    </nav>
+  </header>  <main class="container">
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Results-driven Data Engineer with 4+ years of experience designing scalable data pipelines, automating ETL processes, and implementing cloud-based solutions. Proficient in Python, SQL, PySpark, and distributed systems with strong hands-on experience in Azure.</p>
+    </section><section id="skills">
+  <h2>Skills</h2>
+  <div class="skills">
+    <span>Python</span><span>SQL</span><span>PySpark</span><span>Scala</span><span>Spark</span><span>Hive</span><span>Airflow</span><span>Kafka</span><span>Azure</span><span>AWS</span><span>CI/CD</span><span>Git</span>
+  </div>
+</section>
+
+<section id="experience">
+  <h2>Experience</h2>
+  <h3>Tiger Analytics – Data Engineer (Jan 2021 - Mar 2025)</h3>
+  <ul>
+    <li>Built ETL pipelines in ADF & Databricks (2TB/day)</li>
+    <li>Migrated workloads to Synapse, improving performance by 30%</li>
+    <li>Enabled governance automation using AWS Glue and Delta validation</li>
+    <li>Reduced CI/CD errors by 40%</li>
+  </ul>
+  <h3>Freelance/Startup – Data Consultant (Mar 2020 - Dec 2020)</h3>
+  <ul>
+    <li>Architected Snowflake-based solutions</li>
+    <li>Built Kafka/Spark streaming alert systems</li>
+  </ul>
+  <h3>InMovidu – Digital Marketing Intern (Jan 2020 - Mar 2020)</h3>
+  <ul>
+    <li>Created Google Analytics dashboards</li>
+    <li>Ran A/B tests improving engagement by 15%</li>
+  </ul>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <ul>
+    <li><strong>PnL Attribution Engine:</strong> Built ETL for capital data; improved delivery by 35%</li>
+    <li><strong>Lineage Tracker:</strong> Added audit logs for schema changes</li>
+    <li><strong>Forecast Platform:</strong> Enabled PySpark predictive pipelines</li>
+  </ul>
+</section>
+
+<section id="education">
+  <h2>Education</h2>
+  <ul>
+    <li>MBA, Manipal University, Bangalore – 8.2 CGPA</li>
+    <li>BE, PES University, Bangalore – 7.0 CGPA</li>
+  </ul>
+</section>
+
+  </main>  <footer>
     <p>© 2025 Charan N | Designed by CRG | Hosted on GitHub Pages</p>
   </footer>
 </body>
