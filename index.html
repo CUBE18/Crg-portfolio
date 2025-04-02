@@ -22,16 +22,35 @@ header {
   background: linear-gradient(135deg, #1f2937, #111827);
   text-align: center;
   padding: 60px 20px 40px;
+  position: relative;
 }
 
-header img {
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
-  object-fit: cover;
+.avatar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
   margin-bottom: 20px;
-  border: 4px solid #2563eb;
-  box-shadow: 0 0 15px rgba(37, 99, 235, 0.5);
+}
+
+.avatar-container img {
+  width: 160px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 25px rgba(37, 99, 235, 0.5);
+  animation: float 4s ease-in-out infinite;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.avatar-container img:hover {
+  transform: scale(1.05) rotate(2deg);
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
 }
 
 header h1 {
@@ -114,7 +133,9 @@ a:hover {
 </head>
 <body>
   <header>
-    <img src="https://avatars.githubusercontent.com/u/9919?s=200&v=4" alt="Charan Avatar">
+    <div class="avatar-container">
+      <img src="https://charan-ai-site.s3.amazonaws.com/charan_wave_avatar.png" alt="Hi, I’m Charan!" title="Hi, I’m Charan!" onclick="alert('Hi there! I’m Charan, welcome to my portfolio.')">
+    </div>
     <h1>Charan N</h1>
     <p>Data Engineer | Azure | Cloud Pipelines | Distributed Systems</p>
     <nav>
