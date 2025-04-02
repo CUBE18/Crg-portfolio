@@ -3,138 +3,108 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Charan N | Data Engineer</title>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Inter', sans-serif;
-  background-color: #0d1117;
-  color: #c9d1d9;
-  line-height: 1.6;
-  scroll-behavior: smooth;
-}
-
-header {
-  background: linear-gradient(135deg, #1f2937, #111827);
-  text-align: center;
-  padding: 60px 20px 40px;
-  position: relative;
-}
-
-.avatar-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  margin-bottom: 20px;
-}
-
-.avatar-container img {
-  width: 160px;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 0 25px rgba(37, 99, 235, 0.5);
-  animation: float 4s ease-in-out infinite;
-  cursor: pointer;
-  transition: transform 0.3s ease;
-}
-
-.avatar-container img:hover {
-  transform: scale(1.05) rotate(2deg);
-}
-
-@keyframes float {
-  0% { transform: translateY(0px); }
-  50% { transform: translateY(-10px); }
-  100% { transform: translateY(0px); }
-}
-
-header h1 {
-  font-size: 2.8rem;
-  color: #ffffff;
-}
-
-header p {
-  font-size: 1.2rem;
-  color: #60a5fa;
-  margin-top: 8px;
-}
-
-nav {
-  margin-top: 20px;
-}
-
-nav a {
-  margin: 0 15px;
-  color: #60a5fa;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.container {
-  max-width: 1000px;
-  margin: auto;
-  padding: 40px 20px;
-}
-
-section {
-  margin-bottom: 60px;
-  animation: fadeIn 1s ease-in-out;
-}
-
-section h2 {
-  font-size: 1.8rem;
-  border-bottom: 2px solid #2563eb;
-  margin-bottom: 20px;
-  color: #ffffff;
-}
-
-.skills span {
-  display: inline-block;
-  background-color: #1f2937;
-  border: 1px solid #2563eb;
-  color: #c9d1d9;
-  padding: 8px 16px;
-  margin: 5px;
-  border-radius: 30px;
-  font-size: 0.95rem;
-}
-
-ul {
-  padding-left: 20px;
-}
-
-footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #111827;
-  color: #6b7280;
-}
-
-a {
-  color: #60a5fa;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #0d1117;
+      color: #c9d1d9;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+    header {
+      background: linear-gradient(135deg, #1f2937, #111827);
+      text-align: center;
+      padding: 60px 20px 40px;
+    }
+    .avatar-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    header h1 {
+      font-size: 2.8rem;
+      color: #ffffff;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #60a5fa;
+      margin-top: 8px;
+    }
+    nav {
+      margin-top: 20px;
+    }
+    nav a {
+      margin: 0 15px;
+      color: #60a5fa;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+    section {
+      margin-bottom: 60px;
+      animation: fadeIn 1s ease-in-out;
+    }
+    section h2 {
+      font-size: 1.8rem;
+      border-bottom: 2px solid #2563eb;
+      margin-bottom: 20px;
+      color: #ffffff;
+    }
+    .skills span {
+      display: inline-block;
+      background-color: #1f2937;
+      border: 1px solid #2563eb;
+      color: #c9d1d9;
+      padding: 8px 16px;
+      margin: 5px;
+      border-radius: 30px;
+      font-size: 0.95rem;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #111827;
+      color: #6b7280;
+    }
+    a {
+      color: #60a5fa;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
   </style>
 </head>
 <body>
   <header>
     <div class="avatar-container">
-      <img src="https://charan-ai-site.s3.amazonaws.com/charan_wave_avatar.png" alt="Hi, I’m Charan!" title="Hi, I’m Charan!" onclick="alert('Hi there! I’m Charan, welcome to my portfolio.')">
+      <lottie-player
+        src="https://lottie.host/019a00ed-2582-4a5b-8043-c4913c7482cf/zZQnnXJdx1.json"
+        background="transparent"
+        speed="1"
+        style="width: 200px; height: 200px;"
+        loop
+        autoplay
+      ></lottie-player>
     </div>
     <h1>Charan N</h1>
     <p>Data Engineer | Azure | Cloud Pipelines | Distributed Systems</p>
